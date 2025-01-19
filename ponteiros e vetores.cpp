@@ -14,16 +14,22 @@ criarPonteiro(std::vector<int> vector) {                                // a fun
 }
 
 void exibirValores(std::vector<std::shared_ptr<int>> vetorPonteiro) {   // uma função para exibir os valores do vetor de ponteiros, pega como parametro um vetor de ponteiros 
+  if (vetorPonteiro == nullptr) {
+    std::cout << "vetor invalido " << std::endl;
+  } else {
   for (auto i : vetorPonteiro) {                                        // para cada elemento do vetor de ponteiros
     std::cout << *i << std::endl;                                       // exibe o conteudo do ponteiro
   }
-}
+}}
 
 void dobraValores(std::vector<std::shared_ptr<int>> vetorPonteiro) {    // uma função para multiplicar os valores do vetor de ponteiros, pega como parametro um vetor de ponteiros 
+   if (vetorPonteiro == nullptr) {
+    std::cout << "vetor invalido " << std::endl;
+  }} else{
   for (auto i : vetorPonteiro) {                                        // para cada elemento do vetor de ponteiros
     *i = *i * 2;                                                        // agora o conteudo vai ser o conteudo multiplicado por 2
   }
-}
+}}
 
 int main() {
 
